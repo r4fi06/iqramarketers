@@ -1,0 +1,349 @@
+/* browser reset codes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* container */
+.container{
+    max-width: 1450px;      
+    margin: auto;       
+    display: flex;       
+    flex-wrap: wrap;    
+    align-items: center;
+}
+    /* header started */
+.header-area{
+    background: #003060;
+}
+.logo{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+nav{
+    flex-basis: 80%;
+    max-width: 80%;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: 0.5s;
+}
+.dropdown-content{
+    background: #015ebb;
+    display: none;
+    position: absolute;
+}
+.dropdown-content a{
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0.7);
+}
+.dropdown-content a:hover{
+    background: #68BBE3;
+}
+nav ul li a:hover{
+    background-color: #015ebb;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.digitalMarketing{
+    width: 100%;
+    height: 85vh;
+    background-image:url(../images/Group\ Presentation_Monochromatic.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    align-items: center;
+}
+.iqra{
+    margin-top: 200px;
+}
+.iqra h2{
+    font-size: 45px;
+    color: #ffffff;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.iqra p{   
+    width: 500px;        
+    color: #ffffff;       
+    margin-bottom: 30px;        
+    font-size: 20px;
+}
+.iqra a{
+    color: #ffffff;
+    text-decoration: none;
+    background: #68BBE3;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.iqra a:hover{
+    background: #015ebb;
+}
+    /* header finished */
+
+    /* service area started */
+.service-area{
+    max-width: 100%;
+    height: 70vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-header{
+    max-width: 100%;
+    height: 15vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-header h2{
+    color: #000000;
+    font-size: 32px;
+    /* background: #ffffff */
+}
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.card-image{
+    grid-area: image;
+    background-image: url(../images/Start\ here.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+.card-text h2{
+    margin-top: 0;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.card-text .date{
+    color: #003060;
+    font-size: 12px;
+}
+.card-text p{
+    color: gray;
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 300px;
+}
+.card-stats{
+    grid-area: stats;
+}
+.card-stats a{
+    text-decoration: none;
+    color: #ffffff;
+    background: #003060;
+    transition: 0.5s;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.card-stats a:hover{
+    background: #015ebb;
+}
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px  15px rgba(0, 0, 0, 0.3);
+}
+.seo{
+    background-image: url(../images/SEO.png);
+}
+.smm{
+    background-image: url(../images/Smm.png);
+}
+.sec-footer{
+    width: 100%;
+    height: 10vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    background: #003060;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.sec-footer a:hover{
+    background: #015ebb;
+}
+
+    /* service area finished */
+    /* about started */
+.about-header{
+    max-width: 100%;
+    height: 10vh;
+    background: #003060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-header h2{
+    color: #ffffff;
+    font-size: 32px;
+}
+.about{
+    max-width: 100%;
+    height: 60vh;
+    background: #003060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about-image{
+   
+    width: 50%;
+}
+.about-description{
+    width: 50%;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+}
+.bg-color{
+    background: #003060;
+}
+.bg-color a{
+    background: #015ebb;
+}
+.bg-color a:hover{
+    background: #68BBE3;
+}
+
+    /* about finished */
+/* footer started */
+.row{
+    width: 100%;
+}
+footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer-nav{
+    width: 100%;
+    text-align: center;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px;
+}
+.social-icons{
+    width: 100%;
+    text-align: center;
+}
+.col-2{
+    width: 50%;
+}
+.copyright-area{
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+/* footer finished */
+
+/* contact page started */
+/* contact page header  */
+
+/* contact page header finished */
+.contact-section{
+    margin: 40px 0;
+}
+.contact{
+    width: 40%;
+    margin: auto;
+}
+.contact h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    color: #003060;
+}
+form{
+    margin-top: 20px;
+}
+form label{
+    display: block;
+    color: #003060;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #003060;
+    outline: none;
+}
+.contact-btn{
+    background-color: #003060;
+    color: #ffffff;
+    width: auto;
+    padding: 15px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    background-color: #015ebb;
+}
+/* contact page finished */
